@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RoTrip</title>
+    <script src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js" defer></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="./src/output.css">
+</head>
+<body class="bg-white dark:bg-gray-950 min-h-screen flex items-center justify-center p-4">
+<section class="py-20 bg-gray-50 dark:bg-slate-950" x-data="{ inView: false }" x-init="setTimeout(() => inView = true, 500)">
+    <div class="mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="mb-16 text-center">
+            <div :class="{ 'opacity-100 translate-y-0': inView, 'opacity-0 translate-y-8': !inView }" class="transition-all duration-1000 ease-out">
+                <h2 class="mb-4 text-4xl font-bold text-gray-900 sm:text-5xl dark:text-white">
+                    About Our Company
+                </h2>
+                <p class="mx-auto text-xl text-gray-600 dark:text-gray-300">
+                    We're passionate about creating innovative solutions that help businesses thrive in the digital age.
+                </p>
+            </div>
+        </div>
+        <div class="items-center grid gap-16 mb-20 lg:grid-cols-2">
+            <div class="space-y-8">
+                <div :class="{ 'opacity-100 translate-y-0': inView, 'opacity-0 translate-y-8': !inView }" class="transition-all duration-1000 ease-out delay-200">
+                    <h3 class="mb-6 text-3xl font-bold text-gray-900 dark:text-white">
+                       Exploring the World's Wonders, One Trip at a Time
+                    </h3>
+                    <p class="mb-6 text-lg text-gray-600 leading-relaxed dark:text-gray-300">
+                       Founded in 2009, we’ve been crafting unforgettable travel experiences, helping over 5,000 adventurers explore breathtaking destinations around the globe.
+                    <p class="text-lg text-gray-600 leading-relaxed dark:text-gray-300">
+                       Our team of travel experts, guides, and planners work passionately to create trips that not only show the beauty of today’s destinations but also uncover hidden gems for tomorrow’s memories.
+                    </p>
+                </div>
+                <!-- This is the line that was changed -->
+                <div :class="{ 'opacity-100 translate-y-0': inView, 'opacity-0 translate-y-8': !inView }" class="transition-all duration-1000 ease-out delay-200">
+                    <div class="space-y-4">
+                        <div class="items-start space-x-4 rtl:space-x-reverse flex">
+                            <div class="flex-shrink-0 items-center justify-center flex w-[32px] h-[32px] rounded-full bg-blue-600">
+                                <svg class="w-[16px] h-[16px] text-white" fill="none" stroke="currentColor" viewbox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                            </div>
+                            <div>
+                                <h4 class="text-lg font-semibold text-gray-900 dark:text-white">
+                                    Expert Team
+                                </h4>
+                                <p class="text-gray-600 dark:text-gray-300">
+                                    100+ skilled professionals with years of experience
+                                </p>
+                            </div>
+                        </div>
+                        <div class="items-start space-x-4 rtl:space-x-reverse flex">
+                            <div class="flex-shrink-0 items-center justify-center flex w-[32px] h-[32px] rounded-full bg-blue-600">
+                                <svg class="w-[16px] h-[16px] text-white" fill="none" stroke="currentColor" viewbox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                            </div>
+                            <div>
+                                <h4 class="text-lg font-semibold text-gray-900 dark:text-white">
+                                    Global Reach
+                                </h4>
+                                <p class="text-gray-600 dark:text-gray-300">
+                                    Serving clients across 125+ countries worldwide
+                                </p>
+                            </div>
+                        </div>
+                        <div class="items-start space-x-4 rtl:space-x-reverse flex">
+                            <div class="flex-shrink-0 items-center justify-center flex w-[32px] h-[32px] rounded-full bg-blue-600">
+                                <svg class="w-[16px] h-[16px] text-white" fill="none" stroke="currentColor" viewbox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                            </div>
+                            <div>
+                                <h4 class="text-lg font-semibold text-gray-900 dark:text-white">
+                                    Innovation Focus
+                                </h4>
+                                <p class="text-gray-600 dark:text-gray-300">
+                                    Always adopting the latest technologies and methodologies
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="relative">
+                <div :class="{ 'opacity-100 scale-100': inView, 'opacity-0 scale-95': !inView }" class="transition-all duration-1000 ease-out delay-300">
+                    <div class="relative overflow-hidden rounded-3xl shadow-2xl">
+                        <img src="https://cdn.prod.website-files.com/634681057b887c6f4830fae2/67dd4edf967ba7ce775bc488_8%20Effective%20Ways%20to%20Run%20a%20Successful%20Business%20Meeting.png" alt="Our team at work" class="object-cover w-full h-[384px]" />
+                        <div class="absolute bottom-6 left-6 right-6">
+                            <div class="backdrop-blur-sm p-6 rounded-xl bg-white shadow-lg dark:bg-gray-800">
+                                <div class="grid grid-cols-3 gap-4 text-center">
+                                    <div>
+                                        <div class="text-2xl font-bold text-gray-900 dark:text-white">
+                                            15+
+                                        </div>
+                                        <div class="text-sm text-gray-600 dark:text-gray-400">
+                                            Years
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div class="text-2xl font-bold text-gray-900 dark:text-white">
+                                            70+
+                                        </div>
+                                        <div class="text-sm text-gray-600 dark:text-gray-400">
+                                            Team
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div class="text-2xl font-bold text-gray-900 dark:text-white">
+                                            125+
+                                        </div>
+                                        <div class="text-sm text-gray-600 dark:text-gray-400">
+                                            Countries
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+            <div class="mt-12 text-center">
+                <a href="/" class="inline-block px-10 py-4 bg-gray-200 text-black text-lg font-medium hover:bg-gray-300 transition-colors rounded-none border border-gray-400">
+                    <svg class="w-5 h-5 inline mr-2 -mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"></path></svg>
+                    Go to Home
+                </a>
+            </div>
+</section>
+</body>
+</html>
